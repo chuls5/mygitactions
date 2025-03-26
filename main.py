@@ -1,7 +1,11 @@
-def hello():
-    print("hi")
+def hello() -> str:
+    """Return a greeting message."""
+    return "hi"
 
-def bye():
-  print("bye")
+def bye() -> str:
+    """Return a farewell message."""
+    return "bye"
 
-print(hello())
+if __name__ == "__main__":
+    print(hello())
+    print(bye())
